@@ -1,0 +1,23 @@
+Jerry · web
+Copyright (C) 2026 Miguel Rodríguez Saiz / ArduSolutions
+
+Esta web se publica bajo la licencia GNU GPL-3.0-only.
+El texto íntegro está en el archivo LICENSE.
+
+El programa Jerry es GPL-3.0-only. Deriva de Dodaios, que se publicó
+bajo la licencia Apache-2.0: el aviso de esa licencia se conserva en
+el repositorio del producto (github.com/ardu01/jerry), que hoy es
+privado. Esta web no redistribuye el código de Dodaios ni usa sus
+materiales de marca.
+
+Las caras Saturn, Sprout, Circuit, Mirage, Alloy, Proton y Volt son
+las de Sopa y van bajo licencia GPL. img/jerry-faces.png es la rejilla
+original. img/caras/ son recortes de esa rejilla. img/jerry-saturn.gif
+es el sprite original; img/jerry-saturn.webp es el mismo, sin un
+fotograma dañado y con el fondo oscuro retirado. img/jerry-mark.png
+es la marca original; img/marca.webp es la misma, sin el fondo blanco.
+img/live-ui.png es una captura real del programa.
+
+Inter
+Copyright (c) 2016 The Inter Project Authors (https://github.com/rsms/inter)
+Licencia SIL Open Font License 1.1. El texto está en fonts/OFL.txt.
