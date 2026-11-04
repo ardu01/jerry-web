@@ -3,17 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jerry · Tu escritorio, con voz y con equipo</title>
-<meta name="description" content="Jerry 4.1.2 es un asistente de escritorio con voz y con equipo. Dices oye Jerry o le escribes, y siete agentes con cara propia trabajan en tu ordenador. Modelos locales, sin cuenta en la nube.">
+<title>Jerry 4.1.2 · Asistente de escritorio</title>
+<meta name="description" content="Jerry 4.1.2 es un asistente de escritorio. La palabra de activación es oye Jerry. Siete agentes, modelos locales y sin cuenta en la nube. El repositorio del programa es privado.">
 <meta name="theme-color" content="#07090b">
 <meta name="color-scheme" content="dark">
+<meta name="author" content="Miguel Rodríguez Saiz">
+<link rel="canonical" href="https://ardu01.github.io/jerry-web/">
 <meta property="og:title" content="Jerry · Tu escritorio, con voz y con equipo">
-<meta property="og:description" content="Asistente de escritorio con voz y con equipo. Palabra de activación: oye Jerry. Modelos locales, sin cuenta intermedia en la nube.">
+<meta property="og:description" content="Asistente de escritorio. Palabra de activación: oye Jerry. Siete agentes, modelos locales, sin cuenta en la nube.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
-<meta property="og:image" content="img/og.png">
+<meta property="og:url" content="https://ardu01.github.io/jerry-web/">
+<meta property="og:image" content="https://ardu01.github.io/jerry-web/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jerry 4.1.2 junto a una captura real de su ventana: el paso del nombre, con la barra lateral detrás.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jerry · Tu escritorio, con voz y con equipo">
+<meta name="twitter:description" content="Asistente de escritorio. Palabra de activación: oye Jerry. Modelos locales, sin cuenta en la nube.">
+<meta name="twitter:image" content="https://ardu01.github.io/jerry-web/img/og.png">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="preload" href="fonts/Inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/live-ui.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="estilos.css">
 <script type="application/ld+json">
 {
@@ -34,10 +45,11 @@
 <header class="nav">
   <div class="nav-in">
     <a class="logo" href="#inicio"><img src="img/marca.webp" width="28" height="28" alt=""> Jerry</a>
+    <span class="version">4.1.2</span>
     <nav aria-label="Secciones">
       <a href="#que-es">Qué es</a>
       <a href="#equipo">Equipo</a>
-      <a href="#capturas">Capturas</a>
+      <a href="#ventana">Ventana</a>
       <a href="#empezar">Empezar</a>
       <a href="#licencias">Licencias</a>
       <a class="ext" href="https://github.com/ardu01/jerry">GitHub</a>
@@ -47,51 +59,62 @@
 
 <main id="contenido">
   <section class="hero" id="inicio">
-    <div>
-      <p class="kicker">Jerry 4.1.2 · asistente de escritorio</p>
-      <h1 class="lema">Tu escritorio, <em>con voz y con equipo</em>.</h1>
-      <p class="lead">Jerry es tu asistente de escritorio con voz y con equipo. Dices «oye Jerry» o le escribes, y un equipo de agentes con cara propia se pone a trabajar en tu ordenador.</p>
-      <ul class="pastillas">
-        <li>Palabra «oye Jerry»</li>
-        <li>Cara Saturn</li>
-        <li>Modelos locales</li>
-        <li>Sin cuenta en la nube</li>
-      </ul>
-      <div class="ctas">
-        <a class="btn" href="#empezar">Cómo empezar</a>
-        <a class="btn ghost" href="#equipo">Ver el equipo</a>
+    <div class="hero-top">
+      <div>
+        <p class="kicker">Jerry 4.1.2 · asistente de escritorio</p>
+        <h1 class="lema">Tu escritorio, <em>con voz y con equipo</em>.</h1>
+        <p class="lead">Dices «oye Jerry» o escribes. Siete agentes trabajan en tu ordenador, con modelos locales y sin cuenta en la nube.</p>
+        <ul class="pastillas">
+          <li>«oye Jerry»</li>
+          <li>Siete agentes</li>
+          <li>Modelos locales</li>
+          <li>Sin cuenta en la nube</li>
+        </ul>
+        <div class="ctas">
+          <a class="btn" href="#equipo">Ver el equipo</a>
+          <a class="btn ghost" href="#empezar">Cómo empezar</a>
+        </div>
       </div>
+      <figure class="hero-cara">
+        <img src="img/saturn-quieto.webp" width="200" height="200" alt="Saturn, la cara por defecto de Jerry, en reposo.">
+        <figcaption>Cara Saturn</figcaption>
+      </figure>
     </div>
-    <figure class="hero-visual">
-      <div class="escenario">
-        <a class="foto" href="img/jerry-saturn.webp" data-visor>
-          <picture class="cara-anim">
-            <source srcset="img/jerry-saturn.webp" type="image/webp">
-            <img src="img/jerry-saturn.gif" width="384" height="384" alt="Saturn, la cara por defecto de Jerry: un planeta con anillo que se mueve.">
-          </picture>
-          <img class="cara-quieto" src="img/saturn-quieto.webp" width="384" height="384" alt="Saturn, la cara por defecto de Jerry, en reposo.">
-        </a>
-      </div>
-      <p class="etiqueta">Cara por defecto · Saturn</p>
+
+    <figure class="hero-shot">
+      <a class="foto" href="img/live-ui.png" data-visor>
+        <picture>
+          <source srcset="img/live-ui.webp" type="image/webp">
+          <img src="img/live-ui.png" width="1264" height="761" alt="Captura real de Jerry: a la izquierda la barra lateral y, en el centro, el paso del nombre con el campo Oye Jerry." fetchpriority="high">
+        </picture>
+      </a>
+      <figcaption>Ventana real de Jerry, en el paso del nombre. El campo dice «Oye Jerry». Detrás del cuadro se ven la barra lateral y el campo de escritura. El texto de la captura está en inglés; el selector incluye el español.</figcaption>
     </figure>
+
+    <ul class="ficha-hero">
+      <li><b>4.1.2</b><span>Versión de esta página</span></li>
+      <li><b>7</b><span>Agentes, cada uno con su cara</span></li>
+      <li><b>Local</b><span>Modelos en el ordenador</span></li>
+      <li><b>GPL-3.0-only</b><span>Licencia del programa</span></li>
+    </ul>
   </section>
 
   <section class="bloque corte" id="que-es">
     <p class="kicker">01 · Qué es</p>
-    <h2>Un asistente en el escritorio, no una cuenta.</h2>
-    <p class="lead">Le hablas o le escribes. Jerry trabaja en tu ordenador, con modelos locales y privados. No hace falta una cuenta intermedia en la nube.</p>
+    <h2>Un asistente en el escritorio.</h2>
+    <p class="lead">Jerry se abre en el ordenador. Coordina el navegador, las aplicaciones y los agentes de código, y hace el trabajo ahí.</p>
     <div class="cards">
       <article class="card">
-        <h3>Con voz</h3>
-        <p>La palabra de activación es «oye Jerry». También puedes escribirle. El nombre que le pongas es esa palabra, y puedes cambiarla en Ajustes.</p>
+        <h3>Voz</h3>
+        <p>La palabra de activación es «oye Jerry». El nombre que se le pone en el primer paso es esa palabra, y se cambia en Ajustes. También se le puede escribir.</p>
       </article>
       <article class="card">
-        <h3>Con equipo</h3>
+        <h3>Equipo</h3>
         <p>Siete agentes. Cada uno tiene un trabajo y una cara. Saturn dirige, y es la cara con la que Jerry se presenta.</p>
       </article>
       <article class="card">
-        <h3>En tu ordenador</h3>
-        <p>Coordina el navegador, las aplicaciones del escritorio y los agentes de código. Lo que pide, lo hace ahí.</p>
+        <h3>En local</h3>
+        <p>Los modelos son locales y privados. No hace falta una cuenta intermedia en la nube.</p>
       </article>
     </div>
     <ul class="specs">
@@ -108,7 +131,51 @@
   <section class="bloque corte" id="equipo">
     <p class="kicker">02 · El equipo</p>
     <h2>Siete caras, siete trabajos.</h2>
-    <p class="lead">Cada agente tiene la suya. Saturn es la cara por defecto. La rejilla es la de Sopa, y en cada ficha va el gesto de reposo, recortado de esa misma imagen.</p>
+    <p class="lead">Saturn es la cara por defecto. La rejilla es la de Sopa: cinco gestos de cada cara. En cada ficha, el gesto de reposo, recortado de esa imagen.</p>
+    <div class="equipo">
+      <article class="agente t-sprout">
+        <div class="cara"><img src="img/caras/sprout.webp" width="120" height="120" alt="Sprout en reposo."></div>
+        <p class="rol">Chat</p>
+        <h3>Sprout</h3>
+        <p>La conversación. Le escribes o le hablas, y Sprout es quien está delante.</p>
+      </article>
+      <article class="agente t-saturn">
+        <div class="cara"><img src="img/caras/saturn.webp" width="120" height="120" alt="Saturn en reposo."></div>
+        <p class="rol">Director <i class="chip">Por defecto</i></p>
+        <h3>Saturn</h3>
+        <p>Coordina al equipo. Es la cara con la que Jerry abre.</p>
+      </article>
+      <article class="agente t-circuit">
+        <div class="cara"><img src="img/caras/circuit.webp" width="120" height="120" alt="Circuit en reposo."></div>
+        <p class="rol">Código</p>
+        <h3>Circuit</h3>
+        <p>El código en el ordenador, y el enlace con los agentes de programación.</p>
+      </article>
+      <article class="agente t-mirage">
+        <div class="cara"><img src="img/caras/mirage.webp" width="120" height="120" alt="Mirage en reposo."></div>
+        <p class="rol">Documentos</p>
+        <h3>Mirage</h3>
+        <p>Lee documentos y trabaja con ellos.</p>
+      </article>
+      <article class="agente t-alloy">
+        <div class="cara"><img src="img/caras/alloy.webp" width="120" height="120" alt="Alloy en reposo."></div>
+        <p class="rol">Archivos</p>
+        <h3>Alloy</h3>
+        <p>Carpetas y archivos del ordenador.</p>
+      </article>
+      <article class="agente t-proton">
+        <div class="cara"><img src="img/caras/proton.webp" width="120" height="120" alt="Proton en reposo."></div>
+        <p class="rol">Investigación</p>
+        <h3>Proton</h3>
+        <p>Busca.</p>
+      </article>
+      <article class="agente t-volt">
+        <div class="cara"><img src="img/caras/volt.webp" width="120" height="120" alt="Volt en reposo."></div>
+        <p class="rol">Automatizaciones</p>
+        <h3>Volt</h3>
+        <p>Las tareas que se repiten.</p>
+      </article>
+    </div>
     <figure class="rejilla">
       <a class="foto" href="img/jerry-faces.png" data-visor>
         <picture>
@@ -118,96 +185,43 @@
       </a>
       <figcaption>Caras de Sopa. Cinco gestos: en reposo, hablando, cuando sale bien, cuando falla y durmiendo.</figcaption>
     </figure>
-    <div class="equipo">
-      <article class="agente t-sprout">
-        <div class="cara"><img src="img/caras/sprout.webp" width="120" height="120" alt="Sprout en reposo, cara real del chat."></div>
-        <p class="rol">Chat</p>
-        <h3>Sprout</h3>
-        <p>La conversación. Le escribes o le hablas, y Sprout es quien está delante.</p>
-      </article>
-      <article class="agente t-saturn">
-        <div class="cara"><img src="img/caras/saturn.webp" width="120" height="120" alt="Saturn en reposo, cara real del director."></div>
-        <p class="rol">Director <i class="chip">Por defecto</i></p>
-        <h3>Saturn</h3>
-        <p>Coordina al equipo. Es la cara con la que Jerry abre y la que queda si no eliges otra.</p>
-      </article>
-      <article class="agente t-circuit">
-        <div class="cara"><img src="img/caras/circuit.webp" width="120" height="120" alt="Circuit en reposo, cara real del código."></div>
-        <p class="rol">Código</p>
-        <h3>Circuit</h3>
-        <p>El código en tu ordenador, y el enlace con los agentes de programación.</p>
-      </article>
-      <article class="agente t-mirage">
-        <div class="cara"><img src="img/caras/mirage.webp" width="120" height="120" alt="Mirage en reposo, cara real de documentos."></div>
-        <p class="rol">Documentos</p>
-        <h3>Mirage</h3>
-        <p>Los documentos. Leerlos y trabajar con ellos es su parte.</p>
-      </article>
-      <article class="agente t-alloy">
-        <div class="cara"><img src="img/caras/alloy.webp" width="120" height="120" alt="Alloy en reposo, cara real de archivos."></div>
-        <p class="rol">Archivos</p>
-        <h3>Alloy</h3>
-        <p>Carpetas y archivos del ordenador.</p>
-      </article>
-      <article class="agente t-proton">
-        <div class="cara"><img src="img/caras/proton.webp" width="120" height="120" alt="Proton en reposo, cara real de investigación."></div>
-        <p class="rol">Investigación</p>
-        <h3>Proton</h3>
-        <p>La investigación. Buscar es su trabajo.</p>
-      </article>
-      <article class="agente t-volt">
-        <div class="cara"><img src="img/caras/volt.webp" width="120" height="120" alt="Volt en reposo, cara real de automatizaciones."></div>
-        <p class="rol">Automatizaciones</p>
-        <h3>Volt</h3>
-        <p>Las tareas que se repiten.</p>
-      </article>
-    </div>
-    <ul class="gestos" aria-label="Gestos de las caras">
-      <li>En reposo</li>
-      <li>Hablando</li>
-      <li>Cuando sale bien</li>
-      <li>Cuando falla</li>
-      <li>Durmiendo</li>
-    </ul>
-    <p class="nota">El sprite que se mueve, arriba del todo, es Saturn. En la rejilla se ven los cinco gestos de las siete caras.</p>
   </section>
 
-  <section class="bloque corte" id="capturas">
-    <p class="kicker">03 · Capturas</p>
-    <h2>La cara, y el primer paso.</h2>
-    <p class="lead">Al empezar, Jerry pregunta cómo quieres llamarle. La captura es la pantalla real. En esa imagen el texto está en inglés; el selector de idioma incluye el español.</p>
-    <div class="galeria">
+  <section class="bloque corte" id="ventana">
+    <p class="kicker">03 · La ventana</p>
+    <h2>Al abrir, Jerry pide un nombre.</h2>
+    <p class="lead">La captura de arriba es la ventana real del programa. El cuadro del primer paso tapa el centro; la barra lateral y el campo de escritura ya están detrás.</p>
+    <div class="ventana">
       <figure class="marco">
         <div class="escenario">
           <a class="foto" href="img/jerry-saturn.webp" data-visor>
             <picture class="cara-anim">
               <source srcset="img/jerry-saturn.webp" type="image/webp">
-              <img src="img/jerry-saturn.gif" width="340" height="340" alt="Saturn, sprite del programa, con el anillo en movimiento.">
+              <img src="img/jerry-saturn.gif" width="280" height="280" alt="Saturn, sprite del programa, con el anillo en movimiento.">
             </picture>
-            <img class="cara-quieto" src="img/saturn-quieto.webp" width="340" height="340" alt="Saturn, sprite del programa, en reposo.">
+            <img class="cara-quieto" src="img/saturn-quieto.webp" width="280" height="280" alt="Saturn, sprite del programa, en reposo.">
           </a>
         </div>
         <figcaption>Sprite de Saturn, el del programa.</figcaption>
       </figure>
-      <figure class="captura">
-        <a class="foto" href="img/live-ui.png" data-visor>
-          <picture>
-            <source srcset="img/live-ui.webp" type="image/webp">
-            <img src="img/live-ui.png" width="1264" height="761" alt="Captura real de Set up Jerry: el campo del nombre dice Oye Jerry.">
-          </picture>
-        </a>
-        <figcaption>Captura real del paso del nombre. El campo dice «Oye Jerry». En inglés los pasos se llaman Name, Connect y Voice.</figcaption>
-      </figure>
+      <dl class="lectura">
+        <div><dt>Paso visible</dt><dd>Name. El campo dice «Oye Jerry».</dd></div>
+        <div><dt>Pasos siguientes</dt><dd>Connect y Voice. En la captura, los nombres están en inglés.</dd></div>
+        <div><dt>Idiomas</dt><dd>EN, DE, ES, 中文 y PT. Esta página está en español.</dd></div>
+        <div><dt>Detrás del cuadro</dt><dd>La barra lateral (New chat, Agents, Agentic IDE, Jerry Voice, Plugins, Artifacts) y el campo de escritura.</dd></div>
+        <div><dt>Cara del cuadro</dt><dd>Saturn, la misma del programa.</dd></div>
+      </dl>
     </div>
+    <p class="nota">La foto del escritorio de Windows, con otras ventanas alrededor, no se publica aquí. Esta es la ventana de Jerry.</p>
   </section>
 
   <section class="bloque corte" id="empezar">
     <p class="kicker">04 · Cómo empezar</p>
     <h2>Primero el acceso. Luego el nombre.</h2>
-    <p class="lead">Esta página no reparte el instalador. El repositorio del producto es privado y, de momento, las descargas viven en su release privada.</p>
+    <p class="lead">Esta página no reparte el instalador. El repositorio del producto es privado y las descargas viven en su release privada.</p>
     <aside class="aviso">
       <p class="kicker">Repositorio privado</p>
-      <p>Quien tenga acceso encuentra el código y los instaladores en <a href="https://github.com/ardu01/jerry">github.com/ardu01/jerry</a>. No hay un enlace público de descarga, y esta web no inventa uno.</p>
+      <p>Quien tenga acceso encuentra el código y los instaladores en <a href="https://github.com/ardu01/jerry">github.com/ardu01/jerry</a>. No hay un enlace público de descarga.</p>
       <p class="centro-enlace"><a class="btn" href="https://github.com/ardu01/jerry">Abrir el repositorio</a></p>
     </aside>
     <ol class="pasos">
@@ -215,7 +229,7 @@
         <span class="num">01</span>
         <div>
           <h3>Entra en el repositorio</h3>
-          <p>Hace falta acceso a github.com/ardu01/jerry. Ahí está la release con los instaladores, mientras siga siendo privada.</p>
+          <p>Hace falta acceso a github.com/ardu01/jerry. Ahí está la release con los instaladores, mientras siga siendo privada. La versión de esta página es la 4.1.2.</p>
         </div>
       </li>
       <li>
@@ -229,14 +243,14 @@
         <span class="num">03</span>
         <div>
           <h3>Conexión y voz</h3>
-          <p>El asistente sigue con esos dos pasos. La misma pantalla deja el idioma en inglés, alemán, español, chino o portugués.</p>
+          <p>El asistente sigue con esos dos pasos. En la misma pantalla se elige el idioma: inglés, alemán, español, chino o portugués.</p>
         </div>
       </li>
       <li>
         <span class="num">04</span>
         <div>
           <h3>Háblale o escríbele</h3>
-          <p>Dices «oye Jerry», o escribes. El equipo se pone a trabajar en tu ordenador: navegador, aplicaciones y agentes de código.</p>
+          <p>Dices «oye Jerry», o escribes. El equipo trabaja en el ordenador: navegador, aplicaciones y agentes de código.</p>
         </div>
       </li>
     </ol>
@@ -244,8 +258,8 @@
 
   <section class="bloque corte" id="licencias">
     <p class="kicker">05 · Licencias</p>
-    <h2>Libre, con dos avisos dentro.</h2>
-    <p class="lead">Jerry, en conjunto, es GPL-3.0-only: solo la versión 3 de la GPL, no una posterior. Dentro caben dos piezas con su propia nota.</p>
+    <h2>GPL-3.0-only, con dos avisos dentro.</h2>
+    <p class="lead">Jerry, en conjunto, es solo la versión 3 de la GPL, no una posterior. Dentro caben dos piezas con su propia nota.</p>
     <div class="licencias">
       <article>
         <h3>Jerry · GPL-3.0-only</h3>
@@ -253,7 +267,7 @@
       </article>
       <article>
         <h3>Dodaios · Apache-2.0</h3>
-        <p>Jerry deriva de Dodaios, publicado bajo la <a href="https://www.apache.org/licenses/LICENSE-2.0">licencia Apache-2.0</a>. El aviso de esa licencia se conserva en el repositorio del producto. Esta web no usa sus materiales de marca.</p>
+        <p>Jerry deriva de Dodaios, publicado bajo la <a href="https://www.apache.org/licenses/LICENSE-2.0">licencia Apache-2.0</a>. El aviso se conserva en el repositorio del producto. Esta web no usa sus materiales de marca.</p>
       </article>
       <article>
         <h3>Caras · GPL</h3>
@@ -270,7 +284,7 @@
     <nav aria-label="Pie">
       <a href="#que-es">Qué es</a>
       <a href="#equipo">Equipo</a>
-      <a href="#capturas">Capturas</a>
+      <a href="#ventana">Ventana</a>
       <a href="#empezar">Empezar</a>
       <a href="#licencias">Licencias</a>
       <a href="https://github.com/ardu01/jerry">github.com/ardu01/jerry</a>

@@ -1,10 +1,14 @@
-# Jerry · web
+# Jerry
 
-Web estática de Jerry 4.1.2, el asistente de escritorio con voz y con equipo.
+Asistente de escritorio con voz y con equipo. La palabra de activación es «oye Jerry». Siete agentes —Saturn, Sprout, Circuit, Mirage, Alloy, Proton y Volt— trabajan en el ordenador con modelos locales, sin cuenta intermedia en la nube.
 
-El lema es «Tu escritorio, con voz y con equipo». La palabra de activación es «oye Jerry». La cara por defecto es Saturn.
+Versión que describe esta página: **4.1.2**. El repositorio del programa es privado ([github.com/ardu01/jerry](https://github.com/ardu01/jerry)) y no hay descarga pública. Esta web no publica un instalador.
 
-Esta página está en español. No tiene paso de compilación, ni cookies, ni rastreadores.
+Web estática, en español, sin paso de compilación, sin cookies y sin rastreadores. El texto y el código de la página son GPL-3.0-only.
+
+Texto corto, por si hace falta en About:
+
+> Asistente de escritorio con voz y con equipo. Palabra: «oye Jerry». Siete agentes, modelos locales, sin cuenta en la nube. Versión 4.1.2. El programa está en un repositorio privado; esta página no reparte el instalador.
 
 ## Verla en local
 
@@ -23,15 +27,15 @@ En el repositorio: Settings → Pages → Build and deployment → Source: **Dep
 - Branch: `main`
 - Folder: `/ (root)`
 
-El archivo `.nojekyll` está en la raíz para que Pages publique los archivos tal cual, sin pasarlos por Jekyll. La página de error es `404.html`, también en la raíz.
+El archivo `.nojekyll` está en la raíz para que Pages publique los archivos tal cual, sin pasarlos por Jekyll. La página de error es `404.html`, también en la raíz. La dirección prevista es <https://ardu01.github.io/jerry-web/>.
 
 ## Archivos
 
 - `index.html` — la página
 - `estilos.css` — el estilo
-- `galeria.js` — el visor de Saturn, sin dependencias
+- `galeria.js` — el visor de imágenes, sin dependencias
 - `404.html`
-- `img/` — sprite, marca y retratos
+- `img/` — captura, caras, marca y tarjeta social
 - `fonts/` — Inter, con su licencia en `fonts/OFL.txt`
 - `LICENSE` — GPL-3.0-only
 - `NOTICE` — avisos de Dodaios, de las caras de Sopa y de Inter
@@ -40,21 +44,30 @@ El archivo `.nojekyll` está en la raíz para que Pages publique los archivos ta
 
 El repositorio del producto es privado: <https://github.com/ardu01/jerry>
 
-Los instaladores están, de momento, en la release privada. Quien tenga acceso los encuentra ahí. Esta web no publica una URL de descarga.
+Los instaladores están en la release privada. Quien tenga acceso los encuentra ahí. Esta web no publica una URL de descarga.
 
 ## Imágenes
 
-Todas las que se ven son archivos reales del producto, salvo el WebP animado de Saturn, que sale del GIF.
+Lo que se ve sale de archivos reales del producto. El WebP animado de Saturn sale del GIF.
 
+- `img/live-ui.png` y `img/live-ui.webp`: ventana real de Jerry en el paso del nombre. El campo dice «Oye Jerry». Detrás del cuadro se ven la barra lateral y el campo de escritura. El PNG es la captura original; el WebP es el mismo archivo, recomprimido para que el texto se lea.
+- `img/og.png`: tarjeta de 1200×630. A la izquierda, el nombre y el lema. A la derecha, esa misma captura.
 - `img/jerry-faces.png` y `img/jerry-faces.webp`: la rejilla de las siete caras.
 - `img/caras/*.webp`: el gesto de reposo, recortado de esa rejilla.
-- `img/jerry-mark.png`: la marca original, con fondo blanco.
-- `img/marca.webp`: la misma marca, con el fondo blanco retirado, para la cabecera oscura.
-- `img/live-ui.png` y `img/live-ui.webp`: captura real del paso del nombre.
+- `img/marca.webp`: la marca, con el fondo blanco retirado, para la cabecera oscura.
 - `img/jerry-saturn.gif`: el sprite original.
 - `img/jerry-saturn.webp`: el mismo sprite, sin un fotograma dañado y con el fondo oscuro retirado.
-- `img/saturn-quieto.webp`: un fotograma en reposo, para quien pide menos movimiento.
-- `img/desktop-with-jerry.png` está en el repositorio y no se enlaza: el escritorio sale lleno (varias ventanas, la barra de tareas) y no aporta a la galería.
+- `img/saturn-quieto.webp`: un fotograma en reposo, para la portada y para quien pide menos movimiento.
+
+No hay un recorte aparte de la ventana: el encuadre original ya es la propia ventana, y recortarlo unos píxeles no aportaba.
+
+## Captura en Linux
+
+No se pudo hacer una captura nueva en esta máquina.
+
+La release `jerry-installer-4.1.2` del repositorio privado guarda `Jerry-Linux-x86_64.AppImage`. La credencial de este entorno solo alcanza `ardu01/jerry-web`. La API de GitHub responde 404 en `ardu01/jerry`, y `git ls-remote` dice «Repository not found». Sin el AppImage no se puede abrir el programa, pasar el asistente en español y fotografiar el chat ya abierto.
+
+La imagen que lleva la portada es la captura real que ya estaba en el repositorio: la ventana de Jerry, no el escritorio de Windows. La foto del escritorio, con otras ventanas y la barra de tareas, no se publica. Tampoco se ha dibujado una interfaz.
 
 ## Licencia
 

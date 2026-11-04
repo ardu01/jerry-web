@@ -16,7 +16,10 @@ original. img/caras/ son recortes de esa rejilla. img/jerry-saturn.gif
 es el sprite original; img/jerry-saturn.webp es el mismo, sin un
 fotograma dañado y con el fondo oscuro retirado. img/jerry-mark.png
 es la marca original; img/marca.webp es la misma, sin el fondo blanco.
-img/live-ui.png es una captura real del programa.
+img/live-ui.png es una captura real de la ventana de Jerry
+(el paso del nombre, con la barra lateral detrás). img/live-ui.webp
+es ese mismo archivo. img/og.png compone esa captura con el nombre
+del producto.
 
 Inter
 Copyright (c) 2016 The Inter Project Authors (https://github.com/rsms/inter)
