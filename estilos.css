@@ -225,37 +225,11 @@ figcaption{
   color:var(--tinta);background:var(--teal);border-radius:999px;padding:.14rem .42rem;font-weight:700;
 }
 
-.ventana{
-  display:grid;grid-template-columns:minmax(200px,280px) minmax(0,1fr);
-  gap:1.4rem;align-items:center;margin-top:1.5rem;
-}
-.marco{
-  background:#0c1014;border:1px solid var(--linea);border-radius:16px;padding:1rem 1rem .85rem;margin:0;
-}
-.escenario{
-  width:min(100%,240px);margin-inline:auto;aspect-ratio:1;
-  display:grid;place-items:center;position:relative;
-  background:radial-gradient(circle at 50% 48%,rgba(62,230,216,.16),transparent 58%);
-  border-radius:50%;
-}
-.escenario img{width:88%;height:auto}
 .foto{
   display:block;padding:0;border:0;background:none;color:inherit;
   cursor:zoom-in;width:100%;text-decoration:none;
 }
 .cara-quieto{display:none}
-.lectura{margin:0}
-.lectura div{
-  display:grid;grid-template-columns:9.5rem 1fr;gap:.8rem 1rem;
-  padding:.72rem 0;border-top:1px solid var(--linea);
-}
-.lectura div:last-child{border-bottom:1px solid var(--linea)}
-.lectura dt{
-  margin:0;
-  font:.72rem var(--mono);font-weight:650;letter-spacing:.08em;
-  text-transform:uppercase;color:var(--teal);padding-top:.15rem;
-}
-.lectura dd{margin:0;color:#d5dee4}
 
 .aviso{
   border:1px solid #2f5551;border-radius:14px;
@@ -330,6 +304,50 @@ figcaption{
   position:relative;z-index:1;
 }
 
+.galeria{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  gap:1rem;margin-top:1.6rem;
+}
+.toma{margin:0}
+.toma .foto{
+  border-radius:12px;overflow:hidden;border:1px solid #243038;background:#0b0e11;
+  transition:border-color .15s ease;
+}
+.toma .foto:hover{border-color:var(--teal)}
+.toma img{width:100%;height:auto;aspect-ratio:16/10}
+.toma figcaption{margin-top:.5rem;font-size:.86rem}
+
+.mascotas{
+  list-style:none;margin:1.6rem 0 0;padding:0;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:.7rem;
+}
+.mascota{
+  background:linear-gradient(180deg,#141a20,#0f1418);
+  border:1px solid var(--linea);border-radius:14px;
+  padding:.8rem .6rem .75rem;text-align:center;
+}
+.mascota.con-agente{border-color:#2f5551;background:linear-gradient(180deg,rgba(62,230,216,.07),#0f1418)}
+.mascota img{width:96px;height:96px;margin:0 auto .35rem}
+.mascota h3{font-size:.98rem;margin:0 0 .1rem}
+.mascota .rol{justify-content:center;color:var(--teal);margin:0;font-size:.62rem;letter-spacing:.07em;overflow-wrap:anywhere}
+.mascota .rol.tenue{color:var(--tenue)}
+.sub{margin-top:2.4rem;font-size:1.2rem}
+.sin-margen{margin-top:0}
+.estados{
+  list-style:none;margin:1.1rem 0 0;padding:0;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.6rem;
+}
+.estados li{
+  display:grid;grid-template-columns:64px 1fr;gap:.8rem;align-items:center;
+  border:1px solid var(--linea);border-radius:12px;padding:.55rem .8rem .55rem .55rem;
+  background:rgba(16,21,26,.55);
+}
+.estados img{width:64px;height:64px}
+.estados div{min-width:0}
+.estados b{display:block;font-weight:650}
+.estados .codigo{font-size:.74rem}
+.estados p{margin:.1rem 0 0;color:var(--suave);font-size:.88rem;line-height:1.4}
+
 @media (prefers-reduced-motion:reduce){
   .cara-anim{display:none}
   .cara-quieto{display:block}
@@ -337,17 +355,20 @@ figcaption{
 }
 
 @media (max-width:900px){
-  .hero-top,.cards,.licencias,.ventana{grid-template-columns:1fr}
+  .hero-top,.cards,.licencias{grid-template-columns:1fr}
   .hero-cara{display:none}
   .ficha-hero{grid-template-columns:1fr 1fr}
   .ficha-hero li:nth-child(2){border-right:0}
   .ficha-hero li:nth-child(1),.ficha-hero li:nth-child(2){border-bottom:1px solid var(--linea)}
-  .specs li,.lectura div{grid-template-columns:1fr;gap:.15rem}
+  .specs li{grid-template-columns:1fr;gap:.15rem}
   .nav-in{flex-wrap:wrap}
   .nav nav{width:100%;margin-left:0;padding-bottom:.15rem}
 }
 @media (max-width:640px){
   body{font-size:16px}
+  .mascotas{grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem}
+  .mascota img{width:72px;height:72px}
+  .galeria{grid-template-columns:1fr}
   .pasos>li{grid-template-columns:2.6rem 1fr}
   .v-ant,.v-sig{top:auto;bottom:1rem;transform:none}
 }

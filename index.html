@@ -17,14 +17,14 @@
 <meta property="og:image" content="https://ardu01.github.io/jerry-web/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Jerry 4.1.2 junto a una captura real de su ventana: el paso del nombre, con la barra lateral detrás.">
+<meta property="og:image:alt" content="Captura real de Jerry 4.1.2: una conversación para ordenar la carpeta Descargas, con la barra lateral de chats.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Jerry · Tu escritorio, con voz y con equipo">
 <meta name="twitter:description" content="Asistente de escritorio. Palabra de activación: oye Jerry. Modelos locales, sin cuenta en la nube.">
 <meta name="twitter:image" content="https://ardu01.github.io/jerry-web/img/og.png">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="preload" href="fonts/Inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="img/live-ui.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" href="img/capturas/descargas-oscuro.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="estilos.css">
 <script type="application/ld+json">
 {
@@ -34,7 +34,7 @@
   "softwareVersion": "4.1.2",
   "applicationCategory": "DesktopApplication",
   "operatingSystem": "Escritorio",
-  "license": "https://www.gnu.org/licenses/gpl-3.0-only.html",
+  "license": "https://www.gnu.org/licenses/gpl-3.0.html",
   "description": "Asistente de escritorio con voz y con equipo. La palabra de activación es oye Jerry. Modelos locales, sin cuenta intermedia en la nube.",
   "author": { "@type": "Person", "name": "Miguel Rodríguez Saiz" }
 }
@@ -49,7 +49,8 @@
     <nav aria-label="Secciones">
       <a href="#que-es">Qué es</a>
       <a href="#equipo">Equipo</a>
-      <a href="#ventana">Ventana</a>
+      <a href="#mascotas">Mascotas</a>
+      <a href="#capturas">Capturas</a>
       <a href="#empezar">Empezar</a>
       <a href="#licencias">Licencias</a>
       <a class="ext" href="https://github.com/ardu01/jerry">GitHub</a>
@@ -82,13 +83,10 @@
     </div>
 
     <figure class="hero-shot">
-      <a class="foto" href="img/live-ui.png" data-visor>
-        <picture>
-          <source srcset="img/live-ui.webp" type="image/webp">
-          <img src="img/live-ui.png" width="1264" height="761" alt="Captura real de Jerry: a la izquierda la barra lateral y, en el centro, el paso del nombre con el campo Oye Jerry." fetchpriority="high">
-        </picture>
+      <a class="foto" href="img/capturas/descargas-oscuro.webp" data-visor>
+        <img src="img/capturas/descargas-oscuro.webp" width="1600" height="1000" alt="Captura real de Jerry en modo oscuro: le piden ordenar la carpeta Descargas y responde con una tabla por tipo de archivo, después de ejecutar dos comandos." fetchpriority="high">
       </a>
-      <figcaption>Ventana real de Jerry, en el paso del nombre. El campo dice «Oye Jerry». Detrás del cuadro se ven la barra lateral y el campo de escritura. El texto de la captura está en inglés; el selector incluye el español.</figcaption>
+      <figcaption>Ventana real de Jerry, en español y en modo oscuro. La conversación es de ejemplo; la interfaz es la del programa.</figcaption>
     </figure>
 
     <ul class="ficha-hero">
@@ -187,36 +185,248 @@
     </figure>
   </section>
 
-  <section class="bloque corte" id="ventana">
-    <p class="kicker">03 · La ventana</p>
-    <h2>Al abrir, Jerry pide un nombre.</h2>
-    <p class="lead">La captura de arriba es la ventana real del programa. El cuadro del primer paso tapa el centro; la barra lateral y el campo de escritura ya están detrás.</p>
-    <div class="ventana">
-      <figure class="marco">
-        <div class="escenario">
-          <a class="foto" href="img/jerry-saturn.webp" data-visor>
-            <picture class="cara-anim">
-              <source srcset="img/jerry-saturn.webp" type="image/webp">
-              <img src="img/jerry-saturn.gif" width="280" height="280" alt="Saturn, sprite del programa, con el anillo en movimiento.">
-            </picture>
-            <img class="cara-quieto" src="img/saturn-quieto.webp" width="280" height="280" alt="Saturn, sprite del programa, en reposo.">
-          </a>
-        </div>
-        <figcaption>Sprite de Saturn, el del programa.</figcaption>
+  <section class="bloque corte" id="mascotas">
+    <p class="kicker">03 · Mascotas</p>
+    <h2>Veintiuna caras animadas.</h2>
+    <p class="lead">Jerry trae las 21 caras de Sopa como mascotas. Se elige una en Ajustes › Mis mascotas y flota en el escritorio, encima de las demás ventanas. Las siete marcadas son las de los agentes; las demás se pueden usar igual.</p>
+    <ul class="mascotas">
+      <li class="mascota con-agente">
+        <picture class="cara-anim"><img src="img/mascotas/saturn.webp" width="128" height="128" loading="lazy" decoding="async" alt="Saturn, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/saturn-quieto.webp" width="128" height="128" loading="lazy" alt="Saturn en reposo.">
+        <h3>Saturn</h3>
+        <p class="rol">Director</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/pulsar.webp" width="128" height="128" loading="lazy" decoding="async" alt="Pulsar, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/pulsar-quieto.webp" width="128" height="128" loading="lazy" alt="Pulsar en reposo.">
+        <h3>Pulsar</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/cosmo.webp" width="128" height="128" loading="lazy" decoding="async" alt="Cosmo, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/cosmo-quieto.webp" width="128" height="128" loading="lazy" alt="Cosmo en reposo.">
+        <h3>Cosmo</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/frost.webp" width="128" height="128" loading="lazy" decoding="async" alt="Frost, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/frost-quieto.webp" width="128" height="128" loading="lazy" alt="Frost en reposo.">
+        <h3>Frost</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota con-agente">
+        <picture class="cara-anim"><img src="img/mascotas/volt.webp" width="128" height="128" loading="lazy" decoding="async" alt="Volt, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/volt-quieto.webp" width="128" height="128" loading="lazy" alt="Volt en reposo.">
+        <h3>Volt</h3>
+        <p class="rol">Automatizaciones</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/magma.webp" width="128" height="128" loading="lazy" decoding="async" alt="Magma, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/magma-quieto.webp" width="128" height="128" loading="lazy" alt="Magma en reposo.">
+        <h3>Magma</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/flux.webp" width="128" height="128" loading="lazy" decoding="async" alt="Flux, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/flux-quieto.webp" width="128" height="128" loading="lazy" alt="Flux en reposo.">
+        <h3>Flux</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota con-agente">
+        <picture class="cara-anim"><img src="img/mascotas/circuit.webp" width="128" height="128" loading="lazy" decoding="async" alt="Circuit, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/circuit-quieto.webp" width="128" height="128" loading="lazy" alt="Circuit en reposo.">
+        <h3>Circuit</h3>
+        <p class="rol">Código</p>
+      </li>
+      <li class="mascota con-agente">
+        <picture class="cara-anim"><img src="img/mascotas/proton.webp" width="128" height="128" loading="lazy" decoding="async" alt="Proton, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/proton-quieto.webp" width="128" height="128" loading="lazy" alt="Proton en reposo.">
+        <h3>Proton</h3>
+        <p class="rol">Investigación</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/wisp.webp" width="128" height="128" loading="lazy" decoding="async" alt="Wisp, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/wisp-quieto.webp" width="128" height="128" loading="lazy" alt="Wisp en reposo.">
+        <h3>Wisp</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/bloop.webp" width="128" height="128" loading="lazy" decoding="async" alt="Bloop, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/bloop-quieto.webp" width="128" height="128" loading="lazy" alt="Bloop en reposo.">
+        <h3>Bloop</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota con-agente">
+        <picture class="cara-anim"><img src="img/mascotas/sprout.webp" width="128" height="128" loading="lazy" decoding="async" alt="Sprout, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/sprout-quieto.webp" width="128" height="128" loading="lazy" alt="Sprout en reposo.">
+        <h3>Sprout</h3>
+        <p class="rol">Chat</p>
+      </li>
+      <li class="mascota con-agente">
+        <picture class="cara-anim"><img src="img/mascotas/alloy.webp" width="128" height="128" loading="lazy" decoding="async" alt="Alloy, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/alloy-quieto.webp" width="128" height="128" loading="lazy" alt="Alloy en reposo.">
+        <h3>Alloy</h3>
+        <p class="rol">Archivos</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/turbo.webp" width="128" height="128" loading="lazy" decoding="async" alt="Turbo, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/turbo-quieto.webp" width="128" height="128" loading="lazy" alt="Turbo en reposo.">
+        <h3>Turbo</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/mecha.webp" width="128" height="128" loading="lazy" decoding="async" alt="Mecha, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/mecha-quieto.webp" width="128" height="128" loading="lazy" alt="Mecha en reposo.">
+        <h3>Mecha</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/infinity.webp" width="128" height="128" loading="lazy" decoding="async" alt="Infinity, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/infinity-quieto.webp" width="128" height="128" loading="lazy" alt="Infinity en reposo.">
+        <h3>Infinity</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/zen.webp" width="128" height="128" loading="lazy" decoding="async" alt="Zen, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/zen-quieto.webp" width="128" height="128" loading="lazy" alt="Zen en reposo.">
+        <h3>Zen</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota con-agente">
+        <picture class="cara-anim"><img src="img/mascotas/mirage.webp" width="128" height="128" loading="lazy" decoding="async" alt="Mirage, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/mirage-quieto.webp" width="128" height="128" loading="lazy" alt="Mirage en reposo.">
+        <h3>Mirage</h3>
+        <p class="rol">Documentos</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/saturn-ii.webp" width="128" height="128" loading="lazy" decoding="async" alt="Saturn II, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/saturn-ii-quieto.webp" width="128" height="128" loading="lazy" alt="Saturn II en reposo.">
+        <h3>Saturn II</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/pulsar-ii.webp" width="128" height="128" loading="lazy" decoding="async" alt="Pulsar II, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/pulsar-ii-quieto.webp" width="128" height="128" loading="lazy" alt="Pulsar II en reposo.">
+        <h3>Pulsar II</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+      <li class="mascota">
+        <picture class="cara-anim"><img src="img/mascotas/cosmo-ii.webp" width="128" height="128" loading="lazy" decoding="async" alt="Cosmo II, animada: en reposo, escuchando, hablando y cuando sale bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/cosmo-ii-quieto.webp" width="128" height="128" loading="lazy" alt="Cosmo II en reposo.">
+        <h3>Cosmo II</h3>
+        <p class="rol tenue">Libre</p>
+      </li>
+    </ul>
+    <h3 class="sub">Diez estados</h3>
+    <p class="nota sin-margen">Cada mascota tiene diez animaciones, una por estado, y cambia sola según lo que esté haciendo Jerry. Aquí, Saturn.</p>
+    <ul class="estados">
+      <li>
+        <picture class="cara-anim"><img src="img/mascotas/estados/idle.webp" width="128" height="128" loading="lazy" decoding="async" alt="Saturn, estado en reposo."></picture>
+        <img class="cara-quieto" src="img/mascotas/saturn-quieto.webp" width="128" height="128" loading="lazy" alt="Saturn en reposo.">
+        <div><b>En reposo</b><span class="codigo">idle</span><p>Respira y parpadea mientras no pasa nada.</p></div>
+      </li>
+      <li>
+        <picture class="cara-anim"><img src="img/mascotas/estados/listening.webp" width="128" height="128" loading="lazy" decoding="async" alt="Saturn, estado escuchando."></picture>
+        <img class="cara-quieto" src="img/mascotas/saturn-quieto.webp" width="128" height="128" loading="lazy" alt="Saturn en reposo.">
+        <div><b>Escuchando</b><span class="codigo">listening</span><p>Al oír «oye Jerry», mientras hablas.</p></div>
+      </li>
+      <li>
+        <picture class="cara-anim"><img src="img/mascotas/estados/thinking.webp" width="128" height="128" loading="lazy" decoding="async" alt="Saturn, estado pensando."></picture>
+        <img class="cara-quieto" src="img/mascotas/saturn-quieto.webp" width="128" height="128" loading="lazy" alt="Saturn en reposo.">
+        <div><b>Pensando</b><span class="codigo">thinking</span><p>El modelo está preparando la respuesta.</p></div>
+      </li>
+      <li>
+        <picture class="cara-anim"><img src="img/mascotas/estados/talking.webp" width="128" height="128" loading="lazy" decoding="async" alt="Saturn, estado hablando."></picture>
+        <img class="cara-quieto" src="img/mascotas/saturn-quieto.webp" width="128" height="128" loading="lazy" alt="Saturn en reposo.">
+        <div><b>Hablando</b><span class="codigo">talking</span><p>Mientras Jerry responde en voz alta.</p></div>
+      </li>
+      <li>
+        <picture class="cara-anim"><img src="img/mascotas/estados/success.webp" width="128" height="128" loading="lazy" decoding="async" alt="Saturn, estado bien."></picture>
+        <img class="cara-quieto" src="img/mascotas/saturn-quieto.webp" width="128" height="128" loading="lazy" alt="Saturn en reposo.">
+        <div><b>Bien</b><span class="codigo">success</span><p>Una tarea ha terminado sin problemas.</p></div>
+      </li>
+      <li>
+        <picture class="cara-anim"><img src="img/mascotas/estados/error.webp" width="128" height="128" loading="lazy" decoding="async" alt="Saturn, estado error."></picture>
+        <img class="cara-quieto" src="img/mascotas/saturn-quieto.webp" width="128" height="128" loading="lazy" alt="Saturn en reposo.">
+        <div><b>Error</b><span class="codigo">error</span><p>Algo ha fallado; dura un momento.</p></div>
+      </li>
+      <li>
+        <picture class="cara-anim"><img src="img/mascotas/estados/sleeping.webp" width="128" height="128" loading="lazy" decoding="async" alt="Saturn, estado durmiendo."></picture>
+        <img class="cara-quieto" src="img/mascotas/saturn-quieto.webp" width="128" height="128" loading="lazy" alt="Saturn en reposo.">
+        <div><b>Durmiendo</b><span class="codigo">sleeping</span><p>Tras un rato sin usarse.</p></div>
+      </li>
+      <li>
+        <picture class="cara-anim"><img src="img/mascotas/estados/working.webp" width="128" height="128" loading="lazy" decoding="async" alt="Saturn, estado trabajando."></picture>
+        <img class="cara-quieto" src="img/mascotas/saturn-quieto.webp" width="128" height="128" loading="lazy" alt="Saturn en reposo.">
+        <div><b>Trabajando</b><span class="codigo">working</span><p>Ejecuta comandos o mueve archivos.</p></div>
+      </li>
+      <li>
+        <picture class="cara-anim"><img src="img/mascotas/estados/searching.webp" width="128" height="128" loading="lazy" decoding="async" alt="Saturn, estado buscando."></picture>
+        <img class="cara-quieto" src="img/mascotas/saturn-quieto.webp" width="128" height="128" loading="lazy" alt="Saturn en reposo.">
+        <div><b>Buscando</b><span class="codigo">searching</span><p>Busca en la web o en tus carpetas.</p></div>
+      </li>
+      <li>
+        <picture class="cara-anim"><img src="img/mascotas/estados/held.webp" width="128" height="128" loading="lazy" decoding="async" alt="Saturn, estado en la mano."></picture>
+        <img class="cara-quieto" src="img/mascotas/saturn-quieto.webp" width="128" height="128" loading="lazy" alt="Saturn en reposo.">
+        <div><b>En la mano</b><span class="codigo">held</span><p>Mientras la arrastras por el escritorio.</p></div>
+      </li>
+    </ul>
+    <p class="nota">Las animaciones salen de las hojas de sprites del programa (formato <span class="codigo">jarvis-pet/1</span>: un <span class="codigo">pet.json</span> y una <span class="codigo">sheet.png</span> con una fila por estado), a 128 píxeles por fotograma.</p>
+  </section>
+
+  <section class="bloque corte" id="capturas">
+    <p class="kicker">04 · Capturas</p>
+    <h2>La ventana, tal cual.</h2>
+    <p class="lead">Capturas de la interfaz real de Jerry 4.1.2, en español. Las conversaciones son de ejemplo, escritas para esta página; la ventana, los menús y las mascotas son los del programa. El selector muestra un modelo local, gpt-oss-20b.</p>
+    <div class="galeria">
+      <figure class="toma">
+        <a class="foto" href="img/capturas/descargas-oscuro.webp" data-visor>
+          <img src="img/capturas/descargas-oscuro-mini.webp" width="720" height="450" loading="lazy" decoding="async" alt="Captura real, modo oscuro: Jerry ordena la carpeta Descargas por tipo y propone qué sobra.">
+        </a>
+        <figcaption>Ordenar Descargas</figcaption>
       </figure>
-      <dl class="lectura">
-        <div><dt>Paso visible</dt><dd>Name. El campo dice «Oye Jerry».</dd></div>
-        <div><dt>Pasos siguientes</dt><dd>Connect y Voice. En la captura, los nombres están en inglés.</dd></div>
-        <div><dt>Idiomas</dt><dd>EN, DE, ES, 中文 y PT. Esta página está en español.</dd></div>
-        <div><dt>Detrás del cuadro</dt><dd>La barra lateral (New chat, Agents, Agentic IDE, Jerry Voice, Plugins, Artifacts) y el campo de escritura.</dd></div>
-        <div><dt>Cara del cuadro</dt><dd>Saturn, la misma del programa.</dd></div>
-      </dl>
+      <figure class="toma">
+        <a class="foto" href="img/capturas/contrato-oscuro.webp" data-visor>
+          <img src="img/capturas/contrato-oscuro-mini.webp" width="720" height="450" loading="lazy" decoding="async" alt="Captura real, modo oscuro: resumen en cinco puntos de un contrato en PDF, comparado con el del año anterior.">
+        </a>
+        <figcaption>Resumir un documento</figcaption>
+      </figure>
+      <figure class="toma">
+        <a class="foto" href="img/capturas/copias-oscuro.webp" data-visor>
+          <img src="img/capturas/copias-oscuro-mini.webp" width="720" height="450" loading="lazy" decoding="async" alt="Captura real, modo oscuro: por qué falla un script de copias con rsync cuando lo lanza el programador de tareas.">
+        </a>
+        <figcaption>Una pregunta de código</figcaption>
+      </figure>
+      <figure class="toma">
+        <a class="foto" href="img/capturas/informe-oscuro.webp" data-visor>
+          <img src="img/capturas/informe-oscuro-mini.webp" width="720" height="450" loading="lazy" decoding="async" alt="Captura real, modo oscuro: Jerry crea la automatización «Informe de los lunes».">
+        </a>
+        <figcaption>Una automatización</figcaption>
+      </figure>
+      <figure class="toma">
+        <a class="foto" href="img/capturas/contrato-claro.webp" data-visor>
+          <img src="img/capturas/contrato-claro-mini.webp" width="720" height="450" loading="lazy" decoding="async" alt="Captura real, modo claro: la misma conversación del contrato.">
+        </a>
+        <figcaption>Modo claro</figcaption>
+      </figure>
+      <figure class="toma">
+        <a class="foto" href="img/capturas/mascotas-oscuro.webp" data-visor>
+          <img src="img/capturas/mascotas-oscuro-mini.webp" width="720" height="450" loading="lazy" decoding="async" alt="Captura real, modo oscuro: Ajustes › Mis mascotas, con Saturn como mascota activa.">
+        </a>
+        <figcaption>Mis mascotas</figcaption>
+      </figure>
+      <figure class="toma">
+        <a class="foto" href="img/capturas/mascotas-galeria-claro.webp" data-visor>
+          <img src="img/capturas/mascotas-galeria-claro-mini.webp" width="720" height="450" loading="lazy" decoding="async" alt="Captura real, modo claro: la galería de mascotas de Ajustes, con las caras de Sopa.">
+        </a>
+        <figcaption>Galería de mascotas</figcaption>
+      </figure>
     </div>
-    <p class="nota">La foto del escritorio de Windows, con otras ventanas alrededor, no se publica aquí. Esta es la ventana de Jerry.</p>
+    <p class="nota">Pulsa una captura para verla grande; con las flechas pasas a la siguiente. La mascota flotando sobre el escritorio no sale aquí: esa ventana no se puede capturar desde un navegador.</p>
   </section>
 
   <section class="bloque corte" id="empezar">
-    <p class="kicker">04 · Cómo empezar</p>
+    <p class="kicker">05 · Cómo empezar</p>
     <h2>Primero el acceso. Luego el nombre.</h2>
     <p class="lead">Esta página no reparte el instalador. El repositorio del producto es privado y las descargas viven en su release privada.</p>
     <aside class="aviso">
@@ -257,13 +467,13 @@
   </section>
 
   <section class="bloque corte" id="licencias">
-    <p class="kicker">05 · Licencias</p>
+    <p class="kicker">06 · Licencias</p>
     <h2>GPL-3.0-only, con dos avisos dentro.</h2>
     <p class="lead">Jerry, en conjunto, es solo la versión 3 de la GPL, no una posterior. Dentro caben dos piezas con su propia nota.</p>
     <div class="licencias">
       <article>
         <h3>Jerry · GPL-3.0-only</h3>
-        <p>El programa se ofrece bajo la <a href="https://www.gnu.org/licenses/gpl-3.0-only.html">GNU GPL 3.0 únicamente</a>. Esta web también: el texto y el código de la página, con copyright de Miguel Rodríguez Saiz.</p>
+        <p>El programa se ofrece bajo la <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPL 3.0 únicamente</a>. Esta web también: el texto y el código de la página, con copyright de Miguel Rodríguez Saiz.</p>
       </article>
       <article>
         <h3>Dodaios · Apache-2.0</h3>
@@ -271,7 +481,7 @@
       </article>
       <article>
         <h3>Caras · GPL</h3>
-        <p>Saturn, Sprout, Circuit, Mirage, Alloy, Proton y Volt son las caras de Sopa, con licencia GPL. La rejilla, los recortes y el sprite de Saturn de esta página son esos archivos.</p>
+        <p>Saturn, Sprout, Circuit, Mirage, Alloy, Proton, Volt y las otras catorce son las caras de Sopa, con licencia GPL. Las 21 caras son mascotas de Jerry. La rejilla, los recortes y las animaciones de esta página salen de esos archivos.</p>
       </article>
     </div>
     <p class="nota">El tipo Inter es de The Inter Project Authors y va bajo la SIL Open Font License 1.1. El texto está en <span class="codigo">fonts/OFL.txt</span>.</p>
@@ -284,7 +494,8 @@
     <nav aria-label="Pie">
       <a href="#que-es">Qué es</a>
       <a href="#equipo">Equipo</a>
-      <a href="#ventana">Ventana</a>
+      <a href="#mascotas">Mascotas</a>
+      <a href="#capturas">Capturas</a>
       <a href="#empezar">Empezar</a>
       <a href="#licencias">Licencias</a>
       <a href="https://github.com/ardu01/jerry">github.com/ardu01/jerry</a>

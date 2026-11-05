@@ -24,7 +24,7 @@
     var quieto = nodo.querySelector(".cara-quieto");
     var elegido = reducido && quieto ? quieto : foto;
     return {
-      src: (elegido && (elegido.currentSrc || elegido.src)) || nodo.href,
+      src: (reducido && quieto) ? (quieto.currentSrc || quieto.src) : (nodo.href || (elegido && (elegido.currentSrc || elegido.src))),
       alt: (elegido && elegido.alt) || ""
     };
   }

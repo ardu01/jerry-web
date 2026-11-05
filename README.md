@@ -48,26 +48,19 @@ Los instaladores están en la release privada. Quien tenga acceso los encuentra 
 
 ## Imágenes
 
-Lo que se ve sale de archivos reales del producto. El WebP animado de Saturn sale del GIF.
+Lo que se ve sale de archivos reales del producto.
 
-- `img/live-ui.png` y `img/live-ui.webp`: ventana real de Jerry en el paso del nombre. El campo dice «Oye Jerry». Detrás del cuadro se ven la barra lateral y el campo de escritura. El PNG es la captura original; el WebP es el mismo archivo, recomprimido para que el texto se lea.
-- `img/og.png`: tarjeta de 1200×630. A la izquierda, el nombre y el lema. A la derecha, esa misma captura.
-- `img/jerry-faces.png` y `img/jerry-faces.webp`: la rejilla de las siete caras.
+- `img/capturas/*.webp`: capturas de la interfaz real de Jerry 4.1.2 (commit `2dc1079` de `ardu01/jerry`), en español, en modo oscuro y claro. Se hicieron el 5 de noviembre de 2026 arrancando la interfaz web del programa en Linux en modo servidor, con la interfaz compilada, y fotografiándola con Chromium sin ventana, a 2880×1800. Cada una tiene su versión grande (1600×1000) y una miniatura (`-mini`, 720×450).
+- Las conversaciones de las capturas son de ejemplo: se escribieron en el almacén de chats del programa (`agent_chat.db`) y la interfaz las muestra como cualquier otro chat. El modelo del selector (`gpt-oss-20b`) apuntaba a un servidor local de pruebas.
+- `img/og.png`: tarjeta de 1200×630, recortada de la captura de Descargas.
+- `img/mascotas/*.webp`: las 21 caras de Sopa animadas (reposo, escuchando, hablando y cuando sale bien), sacadas de las `sheet.png` del programa. `*-quieto.webp` es el primer fotograma, para quien pide menos movimiento.
+- `img/mascotas/estados/*.webp`: los diez estados de Saturn, uno por fila de su hoja.
+- `img/jerry-faces.png` y `img/jerry-faces.webp`: la rejilla de las siete caras de los agentes.
 - `img/caras/*.webp`: el gesto de reposo, recortado de esa rejilla.
 - `img/marca.webp`: la marca, con el fondo blanco retirado, para la cabecera oscura.
-- `img/jerry-saturn.gif`: el sprite original.
-- `img/jerry-saturn.webp`: el mismo sprite, sin un fotograma dañado y con el fondo oscuro retirado.
-- `img/saturn-quieto.webp`: un fotograma en reposo, para la portada y para quien pide menos movimiento.
+- `img/saturn-quieto.webp`: Saturn en reposo, para la portada.
 
-No hay un recorte aparte de la ventana: el encuadre original ya es la propia ventana, y recortarlo unos píxeles no aportaba.
-
-## Captura en Linux
-
-No se pudo hacer una captura nueva en esta máquina.
-
-La release `jerry-installer-4.1.2` del repositorio privado guarda `Jerry-Linux-x86_64.AppImage`. La credencial de este entorno solo alcanza `ardu01/jerry-web`. La API de GitHub responde 404 en `ardu01/jerry`, y `git ls-remote` dice «Repository not found». Sin el AppImage no se puede abrir el programa, pasar el asistente en español y fotografiar el chat ya abierto.
-
-La imagen que lleva la portada es la captura real que ya estaba en el repositorio: la ventana de Jerry, no el escritorio de Windows. La foto del escritorio, con otras ventanas y la barra de tareas, no se publica. Tampoco se ha dibujado una interfaz.
+La mascota flotando sobre el escritorio no tiene captura: es una ventana nativa aparte y no se puede fotografiar desde el navegador.
 
 ## Licencia
 
