@@ -1,71 +1,145 @@
-# Jerry
+# Jerry | Official Website
 
-Asistente de escritorio con voz y con equipo. La palabra de activación es «oye Jerry». Siete agentes —Saturn, Sprout, Circuit, Mirage, Alloy, Proton y Volt— trabajan en el ordenador con modelos locales, sin cuenta intermedia en la nube.
+**Sitio web oficial de Jerry, el sistema de asistentes y agentes de inteligencia artificial desarrollado por Ardu Solutions.**
 
-Versión que describe esta página: **4.1.2**. El repositorio del programa es privado ([github.com/ardu01/jerry](https://github.com/ardu01/jerry)) y no hay descarga pública. Esta web no publica un instalador.
+[![Website](https://img.shields.io/badge/Website-Online-16A34A?style=flat-square)](https://ardu01.github.io/jerry-web/)
+![HTML5](https://img.shields.io/badge/HTML5-Web-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Design-1572B6?style=flat-square&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/Hosting-GitHub_Pages-222222?style=flat-square&logo=github)
+![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=flat-square)
 
-Web estática, en español, sin paso de compilación, sin cookies y sin rastreadores. El texto y el código de la página son GPL-3.0-only.
+---
 
-Texto corto, por si hace falta en About:
+## Descripción
 
-> Asistente de escritorio con voz y con equipo. Palabra: «oye Jerry». Siete agentes, modelos locales, sin cuenta en la nube. Versión 4.1.2. El programa está en un repositorio privado; esta página no reparte el instalador.
+**Jerry Web** es la página oficial de presentación del proyecto Jerry, una plataforma de inteligencia artificial para escritorio desarrollada por **Miguel Rodríguez Saiz** bajo Ardu Solutions.
 
-## Verla en local
+Su objetivo es ofrecer un espacio público donde conocer las capacidades del asistente, sus agentes especializados, su interfaz y su evolución.
 
-Abre `index.html` en el navegador, o sirve la carpeta:
+Jerry permite interactuar mediante voz o texto con un equipo de agentes de inteligencia artificial, utilizando modelos locales y herramientas integradas en el ordenador.
+
+Esta web presenta sus principales características, capturas reales y recursos visuales.
+
+**Desarrollador:** Miguel Rodríguez Saiz  
+**Organización:** Ardu Solutions  
+**Categoría:** Desarrollo Web / Inteligencia Artificial / Presentación de Producto  
+**Versión del producto documentada:** 4.1.2  
+**Publicación:** GitHub Pages
+
+## Acceder a la web
+
+**[Visitar la web oficial de Jerry](https://ardu01.github.io/jerry-web/)**
+
+## Características
+
+- Presentación oficial del asistente Jerry.
+- Información sobre sus siete agentes especializados.
+- Capturas reales de la aplicación.
+- Galería de imágenes interactiva.
+- Presentación de los avatares animados.
+- Diseño visual personalizado.
+- Interfaz en español.
+- Sitio estático sin cookies ni rastreadores.
+- Compatible con navegadores modernos.
+- Publicación mediante GitHub Pages.
+
+## Tecnologías
+
+| Tecnología | Función |
+|---|---|
+| HTML5 | Estructura y contenido |
+| CSS3 | Diseño visual y adaptación de interfaz |
+| JavaScript | Interactividad y galería |
+| WebP | Optimización de imágenes |
+| GitHub Pages | Alojamiento y publicación |
+| Git | Control de versiones |
+
+## Estructura del repositorio
+
+```text
+jerry-web/
+│
+├── img/
+│   ├── capturas/
+│   ├── caras/
+│   └── mascotas/
+│
+├── fonts/
+├── index.html
+├── estilos.css
+├── galeria.js
+├── 404.html
+├── .nojekyll
+├── LICENSE
+├── NOTICE
+└── README.md
+```
+
+El archivo `index.html` contiene la página principal, mientras que `estilos.css` y `galeria.js` gestionan la apariencia y la interacción de la galería.
+
+Los directorios de recursos incluyen capturas reales, imágenes de los agentes y elementos gráficos del proyecto.
+
+## Ejecución local
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/ardu01/jerry-web.git
+cd jerry-web
+```
+
+Abrir `index.html` en un navegador o iniciar un servidor HTTP local:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Luego entra en `http://127.0.0.1:8080/`.
+Acceder a:
 
-## GitHub Pages
+`http://localhost:8080`
 
-En el repositorio: Settings → Pages → Build and deployment → Source: **Deploy from a branch**.
+No se requiere compilación ni instalación de dependencias adicionales para servir la página.
 
-- Branch: `main`
-- Folder: `/ (root)`
+## Proyecto principal
 
-El archivo `.nojekyll` está en la raíz para que Pages publique los archivos tal cual, sin pasarlos por Jekyll. La página de error es `404.html`, también en la raíz. La dirección prevista es <https://ardu01.github.io/jerry-web/>.
+Esta web presenta **Jerry**, un asistente de inteligencia artificial para escritorio con interacción por voz y texto.
 
-## Archivos
+La versión documentada, **4.1.2**, presenta siete agentes especializados:
 
-- `index.html` — la página
-- `estilos.css` — el estilo
-- `galeria.js` — el visor de imágenes, sin dependencias
-- `404.html`
-- `img/` — captura, caras, marca y tarjeta social
-- `fonts/` — Inter, con su licencia en `fonts/OFL.txt`
-- `LICENSE` — GPL-3.0-only
-- `NOTICE` — avisos de Dodaios, de las caras de Sopa y de Inter
+- **Saturn:** coordinación del equipo.
+- **Sprout:** conversación.
+- **Circuit:** programación.
+- **Mirage:** documentos.
+- **Alloy:** gestión de archivos.
+- **Proton:** investigación.
+- **Volt:** automatizaciones.
 
-## El programa no se descarga desde aquí
+El código del producto se mantiene en un repositorio privado y los instaladores no se distribuyen públicamente desde esta web.
 
-El repositorio del producto es privado: <https://github.com/ardu01/jerry>
+## Autor
 
-Los instaladores están en la release privada. Quien tenga acceso los encuentra ahí. Esta web no publica una URL de descarga.
+**Miguel Rodríguez Saiz**
 
-## Imágenes
+Diseño y desarrollo del proyecto.
 
-Lo que se ve sale de archivos reales del producto.
+**Ardu Solutions** — Desarrollo de inteligencia artificial, software, sistemas y soluciones tecnológicas.
 
-- `img/capturas/*.webp`: capturas de la interfaz real de Jerry 4.1.2 (commit `2dc1079` de `ardu01/jerry`), en español, en modo oscuro y claro. Se hicieron el 5 de noviembre de 2026 arrancando la interfaz web del programa en Linux en modo servidor, con la interfaz compilada, y fotografiándola con Chromium sin ventana, a 2880×1800. Cada una tiene su versión grande (1600×1000) y una miniatura (`-mini`, 720×450).
-- Las conversaciones de las capturas son de ejemplo: se escribieron en el almacén de chats del programa (`agent_chat.db`) y la interfaz las muestra como cualquier otro chat. El modelo del selector (`gpt-oss-20b`) apuntaba a un servidor local de pruebas.
-- `img/og.png`: tarjeta de 1200×630, recortada de la captura de Descargas.
-- `img/mascotas/*.webp`: las 21 caras de Sopa animadas (reposo, escuchando, hablando y cuando sale bien), sacadas de las `sheet.png` del programa. `*-quieto.webp` es el primer fotograma, para quien pide menos movimiento.
-- `img/mascotas/estados/*.webp`: los diez estados de Saturn, uno por fila de su hoja.
-- `img/jerry-faces.png` y `img/jerry-faces.webp`: la rejilla de las siete caras de los agentes.
-- `img/caras/*.webp`: el gesto de reposo, recortado de esa rejilla.
-- `img/marca.webp`: la marca, con el fondo blanco retirado, para la cabecera oscura.
-- `img/saturn-quieto.webp`: Saturn en reposo, para la portada.
-
-La mascota flotando sobre el escritorio no tiene captura: es una ventana nativa aparte y no se puede fotografiar desde el navegador.
+- **Web oficial:** https://ardu01.github.io/jerry-web/
+- **Portfolio:** https://ardu01.github.io/proyectos/
+- **Ardu Solutions:** https://ardusolutions.pages.dev/
+- **GitHub:** https://github.com/ardu01
 
 ## Licencia
 
-El texto y el código de esta web son GPL-3.0-only. Copyright (C) 2026 Miguel Rodríguez Saiz / ArduSolutions.
+El código y los textos de esta web se distribuyen bajo **GNU General Public License v3.0 (GPL-3.0-only)**.
 
-Jerry, el programa, es GPL-3.0-only. Deriva de Dodaios (Apache-2.0: el aviso se conserva en el repositorio del producto) y usa las caras de Sopa (GPL). Esta web no usa los materiales de marca de Dodaios.
+Jerry deriva de Dodaios, cuyo código original utiliza Apache License 2.0. Los recursos de Sopa y la tipografía Inter mantienen sus respectivas condiciones de licencia.
 
-Inter va bajo la SIL Open Font License 1.1.
+Consultar los archivos `LICENSE` y `NOTICE` para más información.
+
+---
+
+**© 2026 Miguel Rodríguez Saiz · Ardu Solutions**
+
+*Jerry — Your desktop. Your agents. Your intelligence.*
